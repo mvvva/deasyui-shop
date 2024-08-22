@@ -4,11 +4,13 @@
         "dest": "/", 
         "status": 200 
         }],
-        
+
+    
     "functions": {
-      "api/server.js": {
-        "runtime": "vercel/node@18.0.0"
-      }
+        "api/**/*.js": {
+        "maxDuration": 30
+        }
     }
-  }
+}
+  
   
