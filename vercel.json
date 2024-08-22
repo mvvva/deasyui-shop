@@ -6,12 +6,11 @@
       },
       {
         "src": "/(.*)",
-        "dest": "/$1",
-        "status": 200
+        "dest": "/index.html"
       }
     ],
     "functions": {
-      "api/*.js": {
+      "api/server.js": {
         "runtime": "vercel/node@18.0.0"
       }
     }
