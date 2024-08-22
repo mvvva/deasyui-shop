@@ -1,7 +1,19 @@
-{ 
-    "routes": [{ 
-        "src": "/[^.]+", 
-        "dest": "/", 
-        "status": 200 
-        }]
-}
+{
+    "routes": [
+      {
+        "src": "/api/(.*)",
+        "dest": "/api/$1"
+      },
+      {
+        "src": "/(.*)",
+        "dest": "/$1",
+        "status": 200
+      }
+    ],
+    "functions": {
+      "api/*.js": {
+        "runtime": "nodejs18.x"
+      }
+    }
+  }
+  

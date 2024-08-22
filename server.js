@@ -1,5 +1,5 @@
-import express from "express";
-import cors from "cors";
+import express from 'express';
+import cors from 'cors';
 
 const app = express();
 app.use(cors());
@@ -21,5 +21,11 @@ app.post("/login", (req, res) => {
     res.status(401).send("Noto'g'ri kirish ma'lumotlari");
   }
 });
-
 app.listen(8080, () => console.log("Server 8080-portda ishga tushdi"));
+
+// Exporting the handler
+export default (req, res) => {
+  return new Promise((resolve) => {
+    app(req, res, resolve);
+  });
+};
