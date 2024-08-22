@@ -24,8 +24,9 @@ app.post("/login", (req, res) => {
 app.listen(8080, () => console.log("Server 8080-portda ishga tushdi"));
 
 // Exporting the handler
-export default (req, res) => {
+export default async (req, res) => {
   return new Promise((resolve) => {
     app(req, res, resolve);
   });
 };
+

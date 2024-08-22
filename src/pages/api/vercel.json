@@ -1,16 +1,15 @@
 {
-    "routes": [{ 
+    "routes": [
+      { 
         "src": "/[^.]+", 
         "dest": "/", 
         "status": 200 
-        }],
-
-    
+      }
+    ],
     "functions": {
-        "server.js": {
+      "api/server.js": {
         "maxDuration": 30
-        }
+      }
     }
-}
-  
+  }
   
