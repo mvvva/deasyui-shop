@@ -1,11 +1,4 @@
 {
-    "routes": [
-      { 
-        "src": "/[^.]+", 
-        "dest": "/", 
-        "status": 200 
-      }
-    ],
     "functions": {
       "api/server.js": {
         "maxDuration": 30
